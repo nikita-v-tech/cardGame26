@@ -4,6 +4,7 @@
     justify-content: center;
     align-content: center;
     gap: 5px;
+    overflow: hidden;
     
 }
 .card img{
@@ -18,13 +19,13 @@ body{
 }
 .card{
     position: relative;
-    transition: 0.8s;
+    transition: width 0.8s, height 0.8s;
 }
 .card.active{
-    width: 300px;
+    width: 280px;
     height: 236px;
-    z-index: 1;;
-    transform: scale(2.0) translate(100px);
+    z-index: 1;
+    transform: scale(1.8);
 }
 .text{
     font-family: tahoma;
@@ -42,3 +43,32 @@ body{
     padding-bottom: 1px;
     line-height:3px;
 }
+
+/* левая верхняя (1) */
+.card:nth-child(1).active { transform-origin: left top; }
+
+/* правая верхняя (4) */
+.card:nth-child(4).active { transform-origin: right top; }
+
+/* левая нижняя (9) */
+.card:nth-child(9).active { transform-origin: left bottom; }
+
+/* правая нижняя (12) */
+.card:nth-child(12).active { transform-origin: right bottom; }
+
+/* верхние (2, 3) */
+.card:nth-child(2).active,
+.card:nth-child(3).active { transform-origin: top center; }
+
+/* нижние (10, 11) */
+.card:nth-child(10).active,
+.card:nth-child(11).active { transform-origin: bottom center; }
+
+/* левые (5) */
+.card:nth-child(5).active { transform-origin: left center; }
+
+/* правые (8) */
+.card:nth-child(8).active { transform-origin: right center; }
+/* центральные (6,7)*/
+.card:nth-child(6).active,
+.card:nth-child(7).active { transform-origin: center center; }
