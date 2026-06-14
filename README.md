@@ -16,3 +16,4 @@ Game Cards Gallery
 - JavaScript
 
 Как запустить - открыть index.html в браузере.
+![Скриншот галереи](screenshot.png)
