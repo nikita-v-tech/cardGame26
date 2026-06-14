@@ -21,6 +21,10 @@ body{
     position: relative;
     transition: width 0.8s, height 0.8s;
 }
+.card:hover{
+    transform: translateY(6px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+}
 .card.active{
     width: 280px;
     height: 236px;
