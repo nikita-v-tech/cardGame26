@@ -15,6 +15,5 @@ Game Cards Gallery
 - CSS3 
 - JavaScript
 
-Как запустить - открыть index.html в браузере.
 ![Скриншот галереи](screenshot.png)
 [Открыть страницу](https://nikita-v-tech.github.io/cardGame26/)
